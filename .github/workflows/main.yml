@@ -36,5 +36,5 @@ jobs:
       uses: Azure/webapps-deploy@v2.2.5
       with:
         app-name: ds21m013-covid-dashboard
-        publish-profile: ${{ AzurePublishData }}
+        publish-profile: ${{ secrets.AzurePublishData }}
         images: index.docker.io/ds21m013/covid-dashboard:${{ github.sha }}
