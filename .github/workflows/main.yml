@@ -37,5 +37,5 @@ jobs:
       with:
         # Name of the Azure Web App
         app-name: ds21m013-covid-dashboard
-        publish-profile: ${{ AZUREPUBLISHDATA }}
+        publish-profile: ${{ AzurePublishData }}
         images: index.docker.io/ds21m013/covid-dashboard:${{ github.sha }}
